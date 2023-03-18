@@ -9,25 +9,8 @@ import org.utils.ExcelData;
 
 import java.io.IOException;
 
-public class LoginPageTest extends BaseClass
+public class LoginPageTest extends BaseTest
 {
-    @DataProvider(name = "data")
-    public Object[][] dataprovider() throws IOException {
-        Object[][] readData = ExcelData.getExcel("/Users/badshah.p/Desktop/PageObjectModel.xlsx");
-        return readData;
-    }
-
-    @BeforeMethod
-    public void startUp(){
-        setUp(Browser.CHROME,"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-    }
-    @AfterMethod
-    public void terminate() throws InterruptedException {
-        Thread.sleep(3000);
-        close();
-    }
-
-
     /**
      * This will pass the login credential data to the required fields
      */
