@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.Listeners.Listener"></listener>
+    </listeners>
     <test verbose="2" preserve-order="true"
           name="/Users/badshah.p/IdeaProjects/SeleniumFrameWork/src/test/java/org/testcases/HomePageTest.java">
         <classes>
-            <class name="org.testcases.LoginPageTest"/>
-            <class name="org.testcases.HomePageTest"/>
+            <!--<class name="org.testcases.LoginPageTestCases.LoginPageLabelTest"/>-->
+            <class name="org.testcases.LoginPageTestCases.LoginPageLabelTest"></class>
+            <!--<class name="org.testcases.HomePageTest"/>-->
         </classes>
     </test>
 

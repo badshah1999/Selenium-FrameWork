@@ -1,32 +1,37 @@
 package org.base;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Set;
 
 public class BaseClass implements BaseAPI {
-    RemoteWebDriver driver = null;
+    protected RemoteWebDriver driver = null;
     long maxWait = 30;
     long timeOut = 30;
     WebDriverWait wait = null;
+
+
 
     @Override
     public void setUp(Browser browser, String url) {
         switch (browser) {
             case CHROME:
-                driver = new ChromeDriver();
+                ChromeOptions co = new ChromeOptions();
+                co.addArguments("--remote-allow-origins=*");
+                driver = new ChromeDriver(co);
                 break;
             case FIREFOX:
                 driver = new FirefoxDriver();
@@ -51,6 +56,7 @@ public class BaseClass implements BaseAPI {
     public void close() {
         driver.close();
     }
+
 
     @Override
     public WebElement element(Locators locators, String text) {
@@ -79,14 +85,19 @@ public class BaseClass implements BaseAPI {
     }
 
     @Override
-    public void SwitchToFrames(int i) {
-        driver.switchTo().frame(i);
+    public void switchToFrames(int i) {
+        try {
+            driver.switchTo().frame(i);
+        }catch (NoSuchFrameException e){
+            e.printStackTrace();
+        }
+
     }
 
     @Override
     public void Alerts(String type, String text) {
         Alert alert = driver.switchTo().alert();
-        switch (type) {
+        switch (type.toLowerCase()) {
             case "simple":
                 alert.accept();
                 break;
@@ -104,28 +115,33 @@ public class BaseClass implements BaseAPI {
     }
 
     @Override
-    public void SwitchToWindow(int i) {
-        Set<String> windowHandles = driver.getWindowHandles();
-        ArrayList<String> list = new ArrayList<>(windowHandles);
-        driver.switchTo().window(list.get(i));
+    public void switchToWindow(int i) {
+        try {
+            Set<String> windowHandles = driver.getWindowHandles();
+            ArrayList<String> list = new ArrayList<>(windowHandles);
+            driver.switchTo().window(list.get(i));
+        }catch (NoSuchWindowException e){
+            e.printStackTrace();
+        }
+
     }
 
     @Override
     public void selectByIndex(WebElement element, int i) {
         WebElement webElement = isElementVisible(element);
-        new Select(element).selectByIndex(i);
+        new Select(webElement).selectByIndex(i);
     }
 
     @Override
     public void selectByText(WebElement element, String text) {
         WebElement webElement = isElementVisible(element);
-        new Select(element).selectByVisibleText(text);
+        new Select(webElement).selectByVisibleText(text);
     }
 
     @Override
     public void selectByValue(WebElement element, String value) {
         WebElement webElement = isElementVisible(element);
-        new Select(element).selectByValue(value);
+        new Select(webElement).selectByValue(value);
     }
 
     @Override
@@ -161,12 +177,34 @@ public class BaseClass implements BaseAPI {
     }
 
     @Override
-    public String getURL() {
+    public String getCurrentURL() {
         return driver.getCurrentUrl();
     }
 
     @Override
     public boolean isDisplayed(WebElement element) {
         return element.isDisplayed();
+    }
+
+    @Override
+    public boolean isMultiply(WebElement element) {
+        return new Select(element).isMultiple();
+    }
+
+    @Override
+    public void quit() {
+        driver.quit();
+    }
+    @Override
+    public File setTakesScreenshot(String element) {
+        TakesScreenshot takesScreenshot = driver;
+        File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        File destination = new File("./test-output/"+File.separator+element+".png");
+        try {
+            FileHandler.copy(source, destination);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return source;
     }
 }

@@ -4,12 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92929b8f-d6eb-41c4-8554-cd45cd85fe67" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/testcases/BaseTest.java" afterDir="false" />
+    <list default="true" id="92929b8f-d6eb-41c4-8554-cd45cd85fe67" name="Changes" comment="Added BaseTest Class">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Listeners/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/utils/ExtentReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/utils/Property.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/testcases/LoginPageTestCases/LoginPageLabelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/testcases/LoginPageTestCases/LoginPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Extent-Report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/testcases/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testcases/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/base/BaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/base/BaseAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/base/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/utils/ExcelData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/utils/ExcelData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/testcases/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testcases/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/testcases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/testcases/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/testcases/LoginPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +41,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9a5b95a3-b4f6-4216-b38e-987ac30a76f8" />
+        <option name="url" value="https://github.com/badshah1999/Selenium-FrameWork.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -39,25 +65,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.HomePageTest">
-    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="TestNG./Users/badshahkhan/Desktop/My Projects/Selenium/testng.xml">
+    <configuration name="LoginPageLabelTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.testcases.*" />
+          <option name="PATTERN" value="org.testcases.LoginPageTestCases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.testcases" />
-      <option name="MAIN_CLASS_NAME" value="org.testcases.HomePageTest" />
+      <option name="PACKAGE_NAME" value="org.testcases.LoginPageTestCases" />
+      <option name="MAIN_CLASS_NAME" value="org.testcases.LoginPageTestCases.LoginPageLabelTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -65,17 +91,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.Validations" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPageLabelTest.labelVerification" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.testcases.*" />
+          <option name="PATTERN" value="org.testcases.LoginPageTestCases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.testcases" />
-      <option name="MAIN_CLASS_NAME" value="org.testcases.HomePageTest" />
-      <option name="METHOD_NAME" value="Validations" />
+      <option name="PACKAGE_NAME" value="org.testcases.LoginPageTestCases" />
+      <option name="MAIN_CLASS_NAME" value="org.testcases.LoginPageTestCases.LoginPageLabelTest" />
+      <option name="METHOD_NAME" value="labelVerification" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -83,16 +109,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.testcases.*" />
+          <option name="PATTERN" value="org.System.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.testcases" />
-      <option name="MAIN_CLASS_NAME" value="org.testcases.LoginPageTest" />
+      <option name="PACKAGE_NAME" value="org.System" />
+      <option name="MAIN_CLASS_NAME" value="org.System.SystemDetails" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -100,35 +126,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SystemDetails.getSystemDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.testcases.*" />
+          <option name="PATTERN" value="org.System.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.testcases" />
-      <option name="MAIN_CLASS_NAME" value="org.testcases.LoginPageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginPageTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrameWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.testcases" />
-      <option name="MAIN_CLASS_NAME" value="org.testcases.LoginPageTest" />
-      <option name="METHOD_NAME" value="login" />
+      <option name="PACKAGE_NAME" value="org.System" />
+      <option name="MAIN_CLASS_NAME" value="org.System.SystemDetails" />
+      <option name="METHOD_NAME" value="getSystemDetails" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/badshahkhan/Desktop/My Projects/Selenium/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameWork" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -137,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTest" />
-        <item itemvalue="TestNG.LoginPageTest (1)" />
-        <item itemvalue="TestNG.LoginPageTest.login" />
-        <item itemvalue="TestNG.HomePageTest.Validations" />
-        <item itemvalue="TestNG.LoginPageTest (2)" />
+        <item itemvalue="TestNG./Users/badshahkhan/Desktop/My Projects/Selenium/testng.xml" />
+        <item itemvalue="TestNG.LoginPageLabelTest" />
+        <item itemvalue="TestNG.SystemDetails.getSystemDetails" />
+        <item itemvalue="TestNG.SystemDetails" />
+        <item itemvalue="TestNG.LoginPageLabelTest.labelVerification" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +173,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670934732377</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added BaseTest Class">
+      <created>1679139229480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679139229480</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +196,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added BaseTest Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BaseTest Class" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumFrameWork$_Users_badshah_p_IdeaProjects_SeleniumFrameWork_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1671026426358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

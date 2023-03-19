@@ -1,10 +1,10 @@
 package org.testcases;
 
 import org.base.Locators;
+import org.testcases.LoginPageTestCases.LoginPageTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 public class HomePageTest extends LoginPageTest {
-
     @Test(dataProvider = "data")
     public void Validations(String data[]) throws InterruptedException {
 

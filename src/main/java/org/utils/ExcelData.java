@@ -21,9 +21,9 @@ public class ExcelData {
         XSSFWorkbook workbook = new XSSFWorkbook(fileName);
         XSSFSheet sheet = workbook.getSheetAt(0);
         int rownumber = sheet.getLastRowNum();
-        System.out.println("No. of Rows:" + rownumber);
+        //System.out.println("No. of Rows:" + rownumber);
         int cellnumber = sheet.getRow(0).getLastCellNum();
-        System.out.println("No. of Columns:" + cellnumber);
+        //System.out.println("No. of Columns:" + cellnumber);
         String[][] data = new String[rownumber][cellnumber];
         for (int i = 1; i <= rownumber; i++) {
             XSSFRow row = sheet.getRow(i);
@@ -31,7 +31,7 @@ public class ExcelData {
                 XSSFCell cell = row.getCell(j);
                 DataFormatter dataFormatter = new DataFormatter();
                 String value = dataFormatter.formatCellValue(cell);
-                System.out.println(value);
+                //System.out.println(value);
                 data[i - 1][j] = value;
             }
         }

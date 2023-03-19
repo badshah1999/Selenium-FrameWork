@@ -3,6 +3,8 @@ package org.base;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
+import java.io.File;
+
 public interface BaseAPI {
     /**
      * This will launch the given browser with given URL
@@ -23,7 +25,7 @@ public interface BaseAPI {
     /**
      * This is used to switch between the frames in the Web Page
      */
-    void SwitchToFrames(int i);
+    void switchToFrames(int i);
 
     /**
      * This is used to handle the Alerts in the webpage
@@ -33,7 +35,7 @@ public interface BaseAPI {
     /**
      * This is used to switch between windows in window handling
      */
-    void SwitchToWindow(int i);
+    void switchToWindow(int i);
 
     /**
      * This is used to select the options in the drop down menu using index
@@ -75,10 +77,24 @@ public interface BaseAPI {
     /**
      * This will fetch the current URL of the webpage
      */
-    String getURL();
+    String getCurrentURL();
 
     /**
      * This is used to check whether the web elements are present or not
      */
     boolean isDisplayed(WebElement element);
+
+    /**
+     * This is used to check the drop down list is allowing to select multiple values
+     * @param element
+     * @return
+     */
+    boolean isMultiply(WebElement element);
+
+    /**
+     * This is used to quit to driver
+     */
+    void quit();
+    File setTakesScreenshot(String element);
+
 }
