@@ -7,9 +7,9 @@
     <test verbose="2" preserve-order="true"
           name="/Users/badshah.p/IdeaProjects/SeleniumFrameWork/src/test/java/org/testcases/HomePageTest.java">
         <classes>
-            <!--<class name="org.testcases.LoginPageTestCases.LoginPageLabelTest"/>-->
+            <class name="org.testcases.LoginPageTestCases.LoginPageLabelTest"/>
             <class name="org.testcases.LoginPageTestCases.LoginPageLabelTest"></class>
-            <!--<class name="org.testcases.HomePageTest"/>-->
+            <class name="org.testcases.HomePageTest"/>
         </classes>
     </test>
 
