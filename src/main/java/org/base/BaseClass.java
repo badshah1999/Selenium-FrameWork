@@ -205,6 +205,6 @@ public class BaseClass implements BaseAPI {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return source;
+        return destination;
     }
 }
