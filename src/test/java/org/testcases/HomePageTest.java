@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 public class HomePageTest extends LoginPageTest {
     @Test(dataProvider = "data")
-    public void Validations(String data[]) throws InterruptedException {
+    public void homePageLabelValidations(String data[]) throws InterruptedException {
 
         login(data);
 
